@@ -7,6 +7,14 @@ A simple yet elegant Quote Generator web app built using HTML, CSS, and JavaScri
 Check out the live version here:  
 👉 [https://abhinav23055.github.io/Quote-generator/](https://abhinav23055.github.io/Quote-generator/)
 
+## 🔍 Project Preview
+
+![Screenshot of the Quote Generator](project-screenshot.PNG)
+
+## 📁 Repository View
+
+![Repository View](repo-screenshot.PNG)
+
 ## 🛠️ Technologies Used
 
 - **HTML** – Structure of the web page  
