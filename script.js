@@ -11,11 +11,6 @@ const quotes = [
     "You were not born to be mediocre."
 ];
 
-document.getElementById("quotebtn").addEventListener("click" , function(){
-    const randomindex = Math.floor(Math.random()* quotes.length);
-    const randomQuote = quotes[randomindex];
-    document.getElementById("quotewrite").innerText = randomQuote;
-});
 
 let lastIndex = -1;
 
@@ -25,5 +20,7 @@ function getNewQuote() {
     index = Math.floor(Math.random() * quotes.length);
   } while (index === lastIndex);
   lastIndex = index;
-  quoteText.textContent = quotes[index];
+  document.getElementById("quotewrite").innerText = quotes[index];
 }
+
+document.getElementById("quotebtn").addEventListener("click", getNewQuote);
