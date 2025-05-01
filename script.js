@@ -17,3 +17,13 @@ document.getElementById("quotebtn").addEventListener("click" , function(){
     document.getElementById("quotewrite").innerText = randomQuote;
 });
 
+let lastIndex = -1;
+
+function getNewQuote() {
+  let index;
+  do {
+    index = Math.floor(Math.random() * quotes.length);
+  } while (index === lastIndex);
+  lastIndex = index;
+  quoteText.textContent = quotes[index];
+}
